@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+.container-fluid{
+    img{
+        margin-left: 20%;
+    }
+}
+@mixin df ($jc,$ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+@mixin dg ($gtc,$gg){
+    display: grid;
+    grid-template-columns: $gtc;
+    grid-gap: $gg;
+}
+.h1{
+   
+    h1{
+        margin-top: 100px;
+        margin-left: 39%;
+ 
+    }
+}
+main{
+    .asos{
+        @include dg(1fr 1fr 1fr,2px);
+        .img1{
+           
+            h1{
+                display: none;
+            }
+            margin-top: 100px;
+            img{
+                width: 55%;
+                margin-left: 60%;
+            }
+        }
+        .img2{
+            h1{
+                display: none;
+            }
+            margin-top: 100px;
+            img{
+                margin-left: 18%;
+                width: 58%;
+            }
+        }
+        .img3{
+            h1{
+                display: none;
+            }
+            margin-top: 100px;
+            img{
+                margin-left: -21%;
+                width: 55%;
+
+            }
+
+        }
+    }
+    .asos2{
+        @include dg( 1fr 1fr,2px);
+        .img4{
+            img{
+                margin-top: 150px;
+                width: 90%;
+                height: 100%;
+            }
+        }
+        .h1{
+            margin-top: 150px;
+            h1{
+                margin-left: -0px;
+            }
+            i{
+
+                font-size: 20px;
+            }
+            button{
+                margin-top: 100px;
+                font-size: 30px;
+            }
+            p{
+                margin-top: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+    .lorem{
+        margin-top: 500px;
+        margin-left: 800px;
+        h1{
+
+        }
+        p{
+            padding: 0% 50% ;
+            margin-left: -50%;
+        }
+    }
+ .asos5{
+    @include dg (1fr 1fr 1fr,10px);
+    margin-left: 200px;
+    .imge{
+img{
+    width: 70%;
+    margin-top: 10px;
+}
+    }
+    .imgr{
+img{
+    width: 70%;
+    margin-top: 10px;
+}
+    }
+    .imgt{
+        img{
+            width: 70%;
+            margin-top: 10px;
+        }
+    }
+ }
+}
+@media(max-width:768px){
+    main{
+        .asos{
+            @include dg( 1fr,2px);
+            .img1{
+               h1{
+                margin-left: 2%;
+                display: block  ;
+               }
+                margin-top: 100px;
+                img{
+                    width: 55%;
+                    margin-left: 2%;
+                }
+            }
+            .img2{
+                display: block  ;
+                h1{
+                    margin-left: 2%;
+                    display: block  ;
+                   }
+                margin-top: 50px;
+                img{
+                    margin-left: 2%;
+                    width: 55%;
+                }
+            }
+            .img3{
+                h1{
+                    margin-left: 2%;
+                    display: block  ;
+                   }
+                margin-top: 50px;
+                img{
+                    margin-left: 2%;
+                    width: 55%;
+    
+                }
+            }
+        }
+        .asos2{
+            @include dg( 1fr ,2px);
+            .img4{
+                img{
+                    margin-top: 100px;
+                    width: 100%;
+                    height: 60%;
+                    margin-left: 2%;
+                }
+            }
+            .h1{
+                margin-top: -200px;
+                h1{
+                    margin-left: 50px;
+                }
+                i{
+                   margin-left: 50px;
+                    font-size: 20px;
+                }
+                button{
+                    margin-top: 100px;
+                    margin-left: 650px;
+                    font-size: 20px;
+                }
+                p{
+                    margin-top: 50px;
+                    font-size: 20px;
+                }
+            }
+         
+        }
+        .asos5{
+            @include dg (1fr,10px);
+            margin-left: 10px;
+            .imge{
+        img{
+            width: 98%;
+            margin-top: 10px;
+        }
+            }
+            .imgr{
+        img{
+            width: 98%;
+            margin-top: 10px;
+        }
+            }
+            .imgt{
+                img{
+                    width: 98%;
+                    margin-top: 10px;
+                }
+            }
+         }
+    }
+    
+
+}
+
+.tugash{
+  @include df(space-around,center);
+   
+    p{
+       
+    }
+}
